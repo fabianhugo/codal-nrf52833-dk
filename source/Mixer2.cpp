@@ -46,7 +46,7 @@ Mixer2::Mixer2(int sampleRate, int sampleRange, int format)
     this->bytesPerSampleOut = 2;
     this->volume = 1.0f;
     this->orMask = 0;
-    this->silenceLevel = 0.0f;
+    this->silenceLevel = 512.0f;
 
     // Attempt to configure output format to requested value
     this->setFormat(format);
