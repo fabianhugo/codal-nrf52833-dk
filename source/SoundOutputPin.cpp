@@ -43,7 +43,7 @@ using namespace codal;
  */
 SoundOutputPin::SoundOutputPin(Mixer2 &mix, int id) : codal::Pin(id, 0, PIN_CAPABILITY_ANALOG), mixer(mix), synth(DEVICE_ID_SOUND_EMOJI_SYNTHESIZER_1), outputBuffer(sizeof(SoundEffect))
 {
-    this->value = 512;
+    this->value = 0;
     this->periodUs = 0;
     this->fx = NULL;
     this->channel = NULL;
